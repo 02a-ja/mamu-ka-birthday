@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamu's Birthday</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    .container {
+      padding: 20px;
+    }
+    .hidden {
+      display: none;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .decor {
+      font-size: 20px;
+      font-weight: bold;
+      color: #FF5733;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page 1: Decorative Birthday Landing -->
+  <div id="page1" class="container">
+    <h1>🎉 Happy Birthday Mamu! 🎂</h1>
+    <p class="decor">Welcome to your special birthday website!</p>
+    <button class="button" onclick="goToPage2()">Next</button>
+  </div>
+
+  <!-- Page 2: Celebration Interface -->
+  <div id="page2" class="container hidden">
+    <h1>🎉 Let's Celebrate! 🎉</h1>
+    <p>Enjoy your day filled with happiness and surprises!</p>
+    <button class="button" onclick="goToPage3()">Next</button>
+  </div>
+
+  <!-- Page 3: Birthday Paragraph -->
+  <div id="page3" class="container hidden">
+    <h1>💌 Special Message for You 💌</h1>
+    <p>
+      Dear Mamu,<br>
+      May this year bring you endless joy, health, and success.<br>
+      You have always been an inspiration to us, and today we celebrate you!
+    </p>
+    <button class="button" onclick="goToPage4()">Next</button>
+  </div>
+
+  <!-- Page 4: Blessings and End -->
+  <div id="page4" class="container hidden">
+    <h1>🎊 Blessings for You! 🎊</h1>
+    <p>
+      May Allah bless you with all the happiness, prosperity, and health.<br>
+      Have a fantastic year ahead!
+    </p>
+    <p>🌟 Happy Birthday Once Again! 🌟</p>
+  </div>
+
+  <script>
+    function goToPage2() {
+      document.getElementById('page1').classList.add('hidden');
+      document.getElementById('page2').classList.remove('hidden');
+    }
+
+    function goToPage3() {
+      document.getElementById('page2').classList.add('hidden');
+      document.getElementById('page3').classList.remove('hidden');
+    }
+
+    function goToPage4() {
+      document.getElementById('page3').classList.add('hidden');
+      document.getElementById('page4').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
